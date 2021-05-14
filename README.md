@@ -4,5 +4,7 @@
 2. cd Proyecto_2-_Asir
 3. crear la base de datos dbsharmaa
 4. Ejecutar los scripts 
-*psql -U username -d dbsharmaa -f PHP/PostgreSQL/tablas_prostgres.sql*
-*psql -U username -d dbsharmaa -f PHP/PostgreSQL/insert_tablas_postrgres.sql*
+```sh 
+psql -U username -d dbsharmaa -f PHP/PostgreSQL/tablas_prostgres.sql    
+psql -U username -d dbsharmaa -f PHP/PostgreSQL/insert_tablas_postrgres.sql
+```

@@ -1,9 +1,9 @@
-// Borra las base de datos y la vuelve a crear. 
+/* Borra las base de datos y la vuelve a crear. */
 /*DELETE es el comando para borrar la DB (si existe), lo he sustituido por el CREATE anterior*/
-DELETE DATABASE IF EXISTS dbsharmaa; 
+/* DELETE DATABASE IF EXISTS dbsharmaa; */
 
-create database dbsharmaa;
-use dbsharmaa;
+/* create database dbsharmaa;*/
+/* use dbsharmaa; */
 
 /* serial significa que se autoincrementa solo y además en primary key junto con dni */
 /*Los pk (que funcionan en MySQL) han sido corregidos a 'primary key'*/

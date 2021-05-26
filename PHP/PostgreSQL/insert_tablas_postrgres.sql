@@ -7,14 +7,19 @@ values (1000,'María', 'Gómez Palo', 91111, '111111A', 'maria@examen.com', 'mag
 /* Tabla servers */
 
 insert into server (servername)
-values ('Servidor1'),('Servidor2'),('Servidor2');
+values ('Servidor1'),('Servidor2'),('Servidor3');
 
 /*  Tabla  incidencia */ 
 
 insert into incidencia (id_emple, prioridad, descripcion, servername)
-values (1000, 'alta', 'reinicio', 'Servidor1'),(1001, 'media', 'backup', 'Servidor3');
+values (1000, 'alta', 'reinicio', 'Servidor1'),(1005, 'media', 'backup', 'Servidor3');
 
 /* Tabla estado_incidencia */
 
-insert into estado_incidecia (id, estado)
-values (1002, 'Pendiente'),(1003, 'Resuelta');
+insert into estado_incidencia (id, estado)
+values (1000, 'Pendiente'),(1003, 'Resuelta');
+
+/* Tabla scripts */
+
+insert into scripts (script)
+values ('backup_servidor1.sh'),('backup_servidor2.sh'),('backup_servidor3.sh'),('restart_servidor1.sh'),('restart_servidor2.sh'),('restart_servidor3.sh'),('print_log_servidor1.sh'),('print_log_servidor2.sh'),('print_log_servidor3.sh'),('reset_password.php');

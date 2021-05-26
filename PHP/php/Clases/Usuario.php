@@ -53,23 +53,35 @@ class Usuario{
 		return $this->cargo;
 	}
 	
- /*
+
 	public function setId($id){
 	    $this->id=$id;
 	}
-    public function setNif($nif){
-	    $this->nif=$nif;
-	}
-	public function setUsuario($usuario){
-		$this->usuario=$usuario;
+	public function setNombre($nombre){
+                $this->nombre=$nombre;
+        }
+        public function setApellidos($apellidos){
+		$this->apellidos=$apellidos;
+        }
+        public function setTelefono($telefono){
+                $this->telefono=$telefono;
+        }
+        public function setDni($dni){
+	    $this->dni=$dni;
 	}
 	public function setEmail($email){
 		$this->email=$email;
 	}
-	public function setClave($clave){
-		$this->clave=$clave;
+ 	public function setUsuario($usuario){
+                $this->usuario=$usuario;
+        }
+	public function setPassword($password){
+		$this->password=$password;
+	}
+        public function setCargo($cargo){
+                $this->cargo=$cargo;
+        }
 
-*/
 }
 ?>
 

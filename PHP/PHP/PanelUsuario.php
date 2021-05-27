@@ -1,12 +1,13 @@
 <?php
 
 require 'FuncionesModelo.php';
-//$idEmple = 1000;
 session_name('sharmaa');
 session_start();
 $idEmple=$_SESSION['idUsuario'];
 $arrayIncidenciasUsuario = getIncidenciasUsuario($idEmple);
 $datosUsuario = getDatosUsuario($idEmple);
+
+if(isset($_SESSION["idUsuario"])&& $_SESSION["idUsuario"]!=""){
 
 ?>
 
@@ -27,7 +28,7 @@ $datosUsuario = getDatosUsuario($idEmple);
                         <th>Password</th>
                 </tr>
                 <tr>
-                        <td><?= $datosUsuario->getDni(); ?></td>
+			<td><?= $datosUsuario->getDni(); ?></td>
                         <td><?= $datosUsuario->getUsuario(); ?></td>
                         <td><?= $datosUsuario->getEmail(); ?></td>
                         <td><?= $datosUsuario->getPassword(); ?></td>
@@ -110,3 +111,9 @@ $datosUsuario = getDatosUsuario($idEmple);
         </form>
 </body>
 </html>
+<?php
+}else{
+        header("Location:index.php");
+}
+?>
+

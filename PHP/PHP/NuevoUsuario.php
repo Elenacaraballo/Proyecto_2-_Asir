@@ -12,6 +12,11 @@ $arrayUsuarios=getUsuarios();
         <meta charset="utf-8">
 </head>
 <body>
+	    <ul>
+        	<li><a href="PanelAdministrador.php">Incidencias</a></li>
+        	<li><a href="#">Usuarios</a></li>
+   	    </ul>
+
 	<h2>Usuarios</h2>
 	        <table border="2">
                 <tr>
@@ -26,7 +31,7 @@ $arrayUsuarios=getUsuarios();
 		</tr>
 		<?php foreach ($arrayUsuarios as $datosUsuario) { ?>
                 <tr>
-                        <td><?= $datosUsuario->getId(); ?></td>
+			<td><?= $datosUsuario->getId(); ?></td>
                         <td><?= $datosUsuario->getNombre(); ?></td>
                         <td><?= $datosUsuario->getApellidos(); ?></td>
 			<td><?= $datosUsuario->getTelefono(); ?></td>
@@ -54,14 +59,10 @@ $arrayUsuarios=getUsuarios();
 	                        <input type="text" value="" name="dni"/></br></br>
 		        </th>
                 	<th>
-                        	<label>Usuario</label>
-	                        <input type="text" value="" name="usuario"/></br></br>
         	                <label>Email</label>
                 	        <input type="text" value="" name="email"/></br></br>
 	                </th>
         	        <th>
-                	        <label>Password</label>
-                        	<input type="password" value="" name="password"/></br></br>
 	                        <label>Cargo</label>
 	                        <input type="text" value="" name="cargo"/></br></br>
 			</th>

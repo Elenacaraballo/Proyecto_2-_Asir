@@ -17,4 +17,9 @@ values (1000, 'alta', 'reinicio', 'Servidor1'),(1005, 'media', 'backup', 'Servid
 /* Tabla estado_incidencia */
 
 insert into estado_incidencia (id, estado)
-values (1000, 'Pendiente'),(1001, 'Resuelta');
+values (1000, 'Pendiente'),(1003, 'Resuelta');
+
+/* Tabla scripts */
+
+insert into scripts (script)
+values ('backup_servidor1.sh'),('backup_servidor2.sh'),('backup_servidor3.sh'),('restart_servidor1.sh'),('restart_servidor2.sh'),('restart_servidor3.sh'),('print_log_servidor1.sh'),('print_log_servidor2.sh'),('print_log_servidor3.sh'),('reset_password.php');

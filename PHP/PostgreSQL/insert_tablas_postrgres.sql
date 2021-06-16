@@ -2,7 +2,7 @@
 
 /* Tabla emple */
 insert into emple (id, nombre, apellidos, telefono, dni, email, usuario, password, cargo)
-values (1000,'María', 'Gómez Palo', 91111, '111111A', 'maria@examen.com', 'magope', 1234, 'Jefe de Proyecto'),(1002,'Alberto', 'Sánchez Bueno', 91112, '111111B', 'alberto@example.com', 'alsabu', 1234, 'Administrador'),(1003,'Marta', 'Tejado Fias', 91113, '111111C', 'marta@example.com', 'matefi', 1234, 'Empleado'),(1004,'Alejandro', 'Loreal Jiménez', 91114, '111111D', 'alejandro@example.com', 'alloji', 1234, 'Empleado'),(1005,'Ismael', 'Rodriguez Leal', 91115, '111111E', 'ismael@example.com', 'isrole', 1234, 'Empleado'),(1006,'Rodrigo', 'Dejado Deldado', 91116, '111111F', 'rodrigo@example.com', 'rodede', 1234, 'Empleado');
+values (1000,'Maria', 'Gomez Palo', 91111, '111111A', 'maria@sharmaa.es', 'magope', 1234, 'administrador'),(1002,'Alberto', 'Sanchez Bueno', 91112, '111111B', 'alberto@sharmaa.es', 'alsabu', 1234, 'empleado'),(1001,'Pedro', 'Tejado Polar', 91113, '111111C', 'pedro@sharmaa.es', 'petepo', 1234, 'empleado'),(1003,'Carla', 'Mañon Jira', 91114, '111111D', 'carla@sharmaa.es', 'camaji', 1234, 'empleado');
 
 /* Tabla servers */
 

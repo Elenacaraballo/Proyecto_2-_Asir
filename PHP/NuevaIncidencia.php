@@ -13,6 +13,6 @@ if(isset($_POST["servername"]) && $_POST["servername"] != "") {
 }
 
 nuevaIncidencia($prioridad,$descripcion,$servername,$id_Emple);
-header("Location:PanelUsuario.php");
+header("Location: PanelUsuario.php");
 
 ?>

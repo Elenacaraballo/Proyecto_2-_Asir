@@ -1,0 +1,51 @@
+body {
+  background-image: url("indice.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 1000px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;/* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.index {
+  height: 500px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: oblique bold 250% cursive;
+  color: purple;
+}
+
+.form-label {
+  width: 200px;
+}
+
+h2 {
+ font: oblique bold 250% cursive;
+ color: purple;
+}
+
+.user {
+ font-family: Arial;
+ font-weight: bold;
+ font-size: 130%;
+}
+
+ul {
+ background-color: #81578f;
+}
+
+.active {
+ background-color: #563d7c !important;
+}
+
+.nav-link {
+ color: #d2de54;
+ font-weight: bold;
+ font-size: 120%;
+}
+
+.nav-link:hover {
+ color: white;
+}

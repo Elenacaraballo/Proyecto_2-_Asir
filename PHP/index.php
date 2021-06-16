@@ -1,8 +1,10 @@
 <?php 
-session_name(sharmaa);
+
+session_name('sharmaa');
 session_start();
 $_SESSION["cargo"]='';
 $_SESSION["idUsuario"]='';
+$error;
 
 $host = "localhost";
 $port = "5432";
@@ -38,7 +40,6 @@ if(isset($_POST["usuario"]) && isset($_POST["password"])){
 				header('Location:PanelUsuario.php');
 				print_r($_POST);
 			}
-
 		}else{
 		 	$error="La contraseña introducida es incorrecta.";
 		}
@@ -50,18 +51,26 @@ if(isset($_POST["usuario"]) && isset($_POST["password"])){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sharmaa</title>
-	<meta charset="utf-8">
+        <title>Sharmaa</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="STYLESHEET" href="css/style.css">
 </head>
-
-	<form action="" method="POST">
-		<label>Usuario</label>
-		<input type="text" require name="usuario"/>
-		<label>Password</label>
-                <input type="password" require name="password"/>
-		<input type="submit" value="Ingresar"/>
-	</form>
-	<div id="error"><?=$error;?>
-		<!--Mensaje de error-->
-	</div>
+<div class="container">
+        <div class="index">
+                <body background="css/indice.jpg">
+                        <form action="" method="POST">
+                                <label class="form-label">Usuario</label>
+                                <input type="text" require name="usuario" class="form-control"/>
+                                <label class="form-label">Password</label>
+                                <input type="password" require name="password" class="form-control"/></br>
+                                <input type="submit" value="Ingresar"/>
+                        </form>
+                        <div id="error"><?=$error;?>
+                                <!--Mensaje de error-->
+                        </div>
+                </body>
+                <script src="/bootstrap/js/bootstrap.min.js"></script>
+        </div>
+</div>
 </html>
